@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+      "target": "es6",
+      "moduleResolution": "node",
+      "pretty": true,
+      "newLine": "LF",
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "sourceMap": false,
+      "skipLibCheck": true,
+      "allowJs": true,
+      "jsx": "react",
+      "baseUrl": "./",
+      "paths": {
+        "@*": ["src*"]
+      }
+  },
+  "exclude": [
+    "node_modules",
+    "public",
+    "dist",
+    "config",
+    "apis",
+    ".vscode",
+    ".git"
+  ]
+}

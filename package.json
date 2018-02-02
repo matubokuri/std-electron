@@ -1,0 +1,69 @@
+{
+  "name": "live-tool-for-youtube",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "buildweb": "webpack --config webpack.web.config.js",
+    "start": "electron ./dist/main.js",
+    "pretest": "webpack --config webpack.tests.config.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "kohichi.matsuda@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^22.1.1",
+    "@types/node-static": "^0.7.1",
+    "@types/react": "^16.0.36",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-redux": "^5.0.14",
+    "@types/react-router-dom": "^4.2.3",
+    "autoprefixer": "^7.2.5",
+    "css-loader": "^0.28.9",
+    "debug": "^3.1.0",
+    "electron-packager": "^9.1.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^22.1.4",
+    "jest-junit": "^3.4.1",
+    "postcss-flexbugs-fixes": "^3.3.0",
+    "postcss-loader": "^2.0.10",
+    "shallowequal": "^1.0.2",
+    "style-loader": "^0.18.2",
+    "supports-color": "^5.1.0",
+    "ts-loader": "^2.3.7",
+    "tslint": "^5.9.1",
+    "tslint-config-standard": "^6.0.1",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.7.1",
+    "webpack": "^3.10.0",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "electron": "^1.8.1",
+    "electron-json-storage": "^4.0.2",
+    "electron-store": "^1.3.0",
+    "is-empty": "^1.2.0",
+    "node-static": "^0.7.10",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.31.1",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-transition-group": "^2.2.1",
+    "redux": "^3.7.2"
+  },
+  "jest": {
+    "testRegex": "/__tests__/.*\\.jsx?",
+    "testResultsProcessor": "./node_modules/jest-junit"
+  },
+  "jest-junit": {
+    "suiteName": "jest tests",
+    "output": "./TEST-jest_junit.xml",
+    "classNameTemplate": "{classname}-{title}",
+    "titleTemplate": "{classname}-{title}",
+    "usePathForSuiteName": "false"
+  }
+}
